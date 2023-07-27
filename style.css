@@ -1,0 +1,100 @@
+h1, h2, h3, p, ul, li{
+    margin: 0;
+    padding: 5px;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+body > *{
+    padding: 10px;
+}
+
+
+header{
+    background-color: red;
+    grid-column: 2 / 4;
+    grid-row: 1;
+    display: grid;
+    grid-template-rows: 2fr 3fr;
+    align-items: center;
+}
+
+.top_header{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+}
+
+.bottom_header{
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    align-items: center;
+
+}
+
+.actions{
+    display: flex;
+    justify-content:space-around;
+}
+
+.actions > *{
+    background: blue;
+    border-radius: 5px;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    background-color: blue;
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+}
+
+.pages, .tech_pages{
+    list-style-type: none;
+}
+
+.main_content{
+    background-color: green;
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+}
+
+.projects{
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+}
+
+.card{
+    margin: 10px;
+    background-color: purple;
+}
+
+.right_content{
+    grid-column: 3 / 4;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.announcements{
+
+}
+
+.trending{
+
+}
+
+.small_text{
+    font-size: 10px;
+}
